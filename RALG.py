@@ -16,13 +16,15 @@ def character_gen(al,ch,t,f,h):
 
 win=Tk()
 win.title(string="RALG")
-win.geometry("250x330")
+win.geometry("250x370")
 win.resizable(width=False, height=False)
 
-but1 = Button(win, text="Generate 3", font=("device", 25), command= lambda: character_gen(al,ch, 3,30,3))
-but2 = Button(win, text="Generate 1", font=("device", 25), command= lambda: character_gen(al,ch, 1,35,30))
+but1 = Button(win, text="Generate 3", font=("device", 20), command= lambda: character_gen(al,ch, 3,30,3))
+but2 = Button(win, text="Generate 2", font=("device", 20), command= lambda: character_gen(al,ch, 2,30,3))
+but3 = Button(win, text="Generate 1", font=("device", 20), command= lambda: character_gen(al,ch, 1,35,30))
 
 but1.pack(pady=3)
 but2.pack(pady=3)
+but3.pack(pady=3)
 
 win.mainloop()
